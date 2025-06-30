@@ -1,0 +1,14 @@
+name: 'capstone'
+version: '1.0'
+profile: 'capstone'
+config-version: 2
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+
+models:
+  capstone:
+    staging:
+      materialized: view
+    marts:
+      materialized: table
